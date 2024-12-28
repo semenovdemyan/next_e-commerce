@@ -11,7 +11,7 @@ import { removeOverflowHiddenFromBody } from '@/lib/utils/common'
 import { useMediaQuery } from '@/hooks/useMediaQuery'
 import CatalogMenuButton from './CatalogMenuButton'
 import CatalogMenuList from './CatalogMenuList'
-import Accordion from '../Accordion/Accordion'
+import Accordeon from '../Accordeon/Accordeon'
 import { $catalogMenuIsOpen } from '@/context/modals/state'
 
 const CatalogMenu = () => {
@@ -213,19 +213,19 @@ const CatalogMenu = () => {
                         </AnimatePresence>
                       )}
                       {isMedia450 && (
-                        <Accordion
+                        <Accordeon
                           title={name}
-                          titleClass='btn-reset nav-menu__accordion__item__title'
+                          titleClass='btn-reset nav-menu__accordeon__item__title'
                         >
-                          <ul className='list-reset catalog__accordion__list'>
+                          <ul className='list-reset catalog__accordeon__list'>
                             {items.map((item, i) => (
                               <li
                                 key={i}
-                                className='catalog__accordion__list__item'
+                                className='catalog__accordeon__list__item'
                               >
                                 <Link
                                   href={item.href}
-                                  className='nav-menu__accordion__item__list__item__link'
+                                  className='nav-menu__accordeon__item__list__item__link'
                                   onClick={item.handleCloseMenu}
                                 >
                                   {item.title}
@@ -233,7 +233,7 @@ const CatalogMenu = () => {
                               </li>
                             ))}
                           </ul>
-                        </Accordion>
+                        </Accordeon>
                       )}
                     </motion.li>
                   )

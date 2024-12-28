@@ -1,22 +1,22 @@
-import { IAccordionProps } from '@/types/modules'
+import { IAccordeonProps } from '@/types/modules'
 import { AnimatePresence, motion } from 'framer-motion'
 import React, { useState } from 'react'
 
-const Accordion = ({
+const Accordeon = ({
   children,
   title,
   titleClass,
   rotateIconClass,
-}: IAccordionProps) => {
+}: IAccordeonProps) => {
   const [expanded, setExpanded] = useState(false)
 
-  const toggleAccordion = () => setExpanded(!expanded)
+  const toggleAccordeon = () => setExpanded(!expanded)
 
   return (
     <>
       <motion.button
         initial={false}
-        onClick={toggleAccordion}
+        onClick={toggleAccordeon}
         className={`btn-reset ${titleClass} ${
           rotateIconClass ? (expanded ? rotateIconClass : '') : ''
         }`}
@@ -45,4 +45,4 @@ const Accordion = ({
   )
 }
 
-export default Accordion
+export default Accordeon

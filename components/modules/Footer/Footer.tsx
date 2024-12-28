@@ -19,18 +19,20 @@ const Footer = () => {
           </div>
           <div className='footer__contacts'>
             <span>
-              <a href='tel:+74999998283'>+7 (499) 999-82-83</a>
+              <a href='tel:+79996683935'>+7 (999) 668-39-35</a>
             </span>
             <span>
-              <a href='mailto:rostelecom.merc@rt.ru'>rostelecom.merc@rt.ru</a>
+              <a href='mailto:semenovdemyan@gmail.com'>
+                semenovdemyan@gmail.com
+              </a>
             </span>
-            {isMedia950 && <FooterLinks />}
+            {/* {isMedia950 && <FooterLinks />} */}
           </div>
-          {!isMedia950 && <FooterLinks />}
+          {/* {!isMedia950 && <FooterLinks />} */}
           <ul className='list-reset footer__socials'>
             <li className='footer__socials__item'>
               <a
-                href='https://t.me/dvejer'
+                href='https://t.me/demian_semenoff'
                 className='footer__socials__item__link'
               />
             </li>

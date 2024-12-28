@@ -35,7 +35,7 @@ import {
 import { loginCheckFx } from '@/context/user'
 import { $favorites, $favoritesFromLS } from '@/context/favorites/state'
 import { $isAuth } from '@/context/auth/state'
-import { $comparison, $comparisonFromLs } from '@/context/comparison/state'
+// import { $comparison, $comparisonFromLs } from '@/context/comparison/state'
 
 const Header = () => {
   const isAuth = useUnit($isAuth)
@@ -43,7 +43,7 @@ const Header = () => {
   const { lang, translations } = useLang()
   // const user = useUnit($user)
   const currentFavoritesByAuth = useGoodsByAuth($favorites, $favoritesFromLS)
-  const currentComparisonByAuth = useGoodsByAuth($comparison, $comparisonFromLs)
+  // const currentComparisonByAuth = useGoodsByAuth($comparison, $comparisonFromLs)
 
   const handleOpenMenu = () => {
     addOverflowHiddenToBody()
@@ -172,7 +172,7 @@ const Header = () => {
               )}
             </Link>
           </li>
-          <li className='header__links__item'>
+          {/* <li className='header__links__item'>
             <Link
               className='header__links__item__btn header__links__item__btn--compare'
               href='/comparison'
@@ -181,7 +181,7 @@ const Header = () => {
                 <span className='not-empty' />
               )}
             </Link>
-          </li>
+          </li> */}
           <li className='header__links__item'>
             <CartPopup />
           </li>

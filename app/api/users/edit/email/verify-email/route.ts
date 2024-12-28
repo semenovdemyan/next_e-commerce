@@ -33,7 +33,7 @@ export async function POST(req: Request) {
     const code = Math.floor(100000 + Math.random() * 900000)
 
     await sendMail(
-      'Rostelecom',
+      'Сытый\u00A0моряк',
       reqBody.email,
       `Ваш код подтверждения для изменения почты: ${code}`
     )

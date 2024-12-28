@@ -19,7 +19,7 @@ import ProductCounter from '../ProductsListItem/ProductCounter'
 import { ICartItem } from '@/types/cart'
 import AddToCartBtn from '../ProductsListItem/AddToCartBtn'
 import { setIsAddToFavorites } from '@/context/favorites'
-import ProductInfoAccordion from './ProductInfoAccordion'
+import ProductInfoAccordeon from './ProductInfoAccordeon'
 import ProductsByCollection from './ProductsByCollection'
 import { $currentProduct } from '@/context/goods/state'
 import { useEffect } from 'react'
@@ -203,14 +203,14 @@ const ProductPageContent = () => {
             </div>
           </div>
           <div className={styles.product__top__description}>
-            <ProductInfoAccordion
+            <ProductInfoAccordeon
               title={translations[lang].product.description}
             >
               <p className={styles.product__top__description__text}>
                 {product.description}
               </p>
-            </ProductInfoAccordion>
-            <ProductInfoAccordion
+            </ProductInfoAccordeon>
+            <ProductInfoAccordeon
               title={translations[lang].product.characteristics}
             >
               <ul
@@ -225,7 +225,7 @@ const ProductPageContent = () => {
                   </li>
                 ))}
               </ul>
-            </ProductInfoAccordion>
+            </ProductInfoAccordeon>
           </div>
         </div>
       </div>

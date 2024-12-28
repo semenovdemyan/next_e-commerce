@@ -1,18 +1,18 @@
-import { IProductInfoAccordionProps } from '@/types/product'
-import Accordion from '../Accordion/Accordion'
+import { IProductInfoAccordeonProps } from '@/types/product'
+import Accordeon from '../Accordeon/Accordeon'
 import styles from '@/styles/product/index.module.scss'
 
-const ProductInfoAccordion = ({
+const ProductInfoAccordeon = ({
   children,
   title,
-}: IProductInfoAccordionProps) => (
-  <Accordion
+}: IProductInfoAccordeonProps) => (
+  <Accordeon
     title={`${title}:`}
     titleClass={styles.product__top__description__btn}
     rotateIconClass={styles.expanded}
   >
     {children}
-  </Accordion>
+  </Accordeon>
 )
 
-export default ProductInfoAccordion
+export default ProductInfoAccordeon

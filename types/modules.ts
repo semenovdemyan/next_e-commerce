@@ -1,6 +1,6 @@
 import { IProduct } from './common'
 
-export interface IAccordionProps {
+export interface IAccordeonProps {
   children: React.ReactNode
   title: string | JSX.Element
   titleClass: string

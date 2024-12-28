@@ -12,7 +12,7 @@ export interface IProductImagesItemProps {
   imgSize: number
 }
 
-export interface IProductInfoAccordionProps {
+export interface IProductInfoAccordeonProps {
   children: React.ReactNode
   title: string
 }

@@ -178,28 +178,28 @@
   color: #E8E9EA;
 }
 
-.nav-menu__accordion {
+.nav-menu__accordeon {
   position: absolute;
   right: 0;
   top: 15px;
   width: 35%;
 }
 
-.nav-menu__accordion__item {
+.nav-menu__accordeon__item {
   position: relative;
   z-index: 3;
 }
 
-.nav-menu__accordion__item:not(:last-child) {
+.nav-menu__accordeon__item:not(:last-child) {
   margin-bottom: 20px;
 }
 
-.nav-menu__accordion__item__list {
+.nav-menu__accordeon__item__list {
   padding-top: 16px !important;
   padding-left: 30px !important;
 }
 
-.nav-menu__accordion__item__title {
+.nav-menu__accordeon__item__title {
   position: relative;
   color: #777C85;
   font-size: 16px;
@@ -207,7 +207,7 @@
   transition: .2s ease-in-out color;
 }
 
-.nav-menu__accordion__item:first-child .nav-menu__accordion__item__title::before {
+.nav-menu__accordeon__item:first-child .nav-menu__accordeon__item__title::before {
   content: '';
   position: absolute;
   background-image: url(/img/menu-line.svg);
@@ -219,16 +219,16 @@
   left: -250px;
 }
 
-.nav-menu__accordion__item__title:hover {
+.nav-menu__accordeon__item__title:hover {
   transition: .2s ease-in-out color;
   color: #E8E9EA;
 }
 
-.nav-menu__accordion__item__list__item:not(:last-child) {
+.nav-menu__accordeon__item__list__item:not(:last-child) {
   margin-bottom: 8px !important;
 }
 
-.nav-menu__accordion__item__list__item__link {
+.nav-menu__accordeon__item__list__item__link {
   color: #E8E9EA;
   font-size: 16px;
   font-weight: 400;
@@ -236,7 +236,7 @@
   text-decoration: none;
 }
 
-.nav-menu__accordion__item__link {
+.nav-menu__accordeon__item__link {
   color: #777C85;
   font-size: 16px;
   font-weight: 400;
@@ -244,12 +244,12 @@
   text-decoration: none;
 }
 
-.nav-menu__accordion__item__link:hover {
+.nav-menu__accordeon__item__link:hover {
   transition: .2s ease-in-out color;
   color: #E8E9EA;
 }
 
-.nav-menu__accordion__item__list__item__link:hover {
+.nav-menu__accordeon__item__list__item__link:hover {
   color: #9466FF;
   transition: .2s ease-in-out color;
 }
@@ -267,7 +267,7 @@
 }
 
 @media (max-width: 800px) {
-  .nav-menu__accordion__item:first-child .nav-menu__accordion__item__title::before {
+  .nav-menu__accordeon__item:first-child .nav-menu__accordeon__item__title::before {
     background-image: url(/img/menu-line-small.svg);
     left: -200px;
   }
@@ -278,7 +278,7 @@
 }
 
 @media (max-width: 640px) {
-  .nav-menu__accordion__item:first-child .nav-menu__accordion__item__title::before {
+  .nav-menu__accordeon__item:first-child .nav-menu__accordeon__item__title::before {
     background-image: none;
   }
 }

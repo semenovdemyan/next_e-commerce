@@ -1,7 +1,7 @@
 import CatalogLayout from '../../components/layouts/CatalogLayout'
 
 export const metadata = {
-  title: 'Ростелеком | Каталог',
+  title: 'Сытый\u00A0моряк | Ассортимент',
 }
 
 export default function ComparisonRootLayout({

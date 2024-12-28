@@ -70,11 +70,11 @@
   text-decoration: none;
 }
 
-.catalog__accordion__item__list__item {
+.catalog__accordeon__item__list__item {
   position: relative;
 }
 
-.catalog__accordion__item__list__item:first-child::before {
+.catalog__accordeon__item__list__item:first-child::before {
   content: '';
   position: absolute;
   left: -90px;
@@ -86,10 +86,10 @@
   background-position: center center;
 }
 
-.catalog__accordion__list {
+.catalog__accordeon__list {
   padding-top: 10px !important;
 }
 
-.catalog__accordion__list__item:not(:last-child) {
+.catalog__accordeon__list__item:not(:last-child) {
   margin-bottom: 10px;
 }

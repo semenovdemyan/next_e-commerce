@@ -8,7 +8,7 @@ import { setLang } from '@/context/lang'
 import { closeMenu } from '@/context/modals'
 import { useLang } from '@/hooks/useLang'
 import { removeOverflowHiddenFromBody } from '@/lib/utils/common'
-import Accordion from '../Accordion/Accordion'
+import Accordeon from '../Accordeon/Accordeon'
 import { usePathname } from 'next/navigation'
 import MenuLinkItem from './MenuLinkItem'
 import { useMediaQuery } from '@/hooks/useMediaQuery'
@@ -169,14 +169,14 @@ const Menu = () => {
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     exit={{ opacity: 0 }}
-                    className='list-reset nav-menu__accordion'
+                    className='list-reset nav-menu__accordeon'
                   >
-                    <li className='nav-menu__accordion__item'>
-                      <Accordion
+                    <li className='nav-menu__accordeon__item'>
+                      <Accordeon
                         title={translations[lang].main_menu.cloth}
-                        titleClass='btn-reset nav-menu__accordion__item__title'
+                        titleClass='btn-reset nav-menu__accordeon__item__title'
                       >
-                        <ul className='list-reset nav-menu__accordion__item__list'>
+                        <ul className='list-reset nav-menu__accordeon__item__list'>
                           {clothLinks.map((item) => (
                             <MenuLinkItem
                               key={item.id}
@@ -185,14 +185,14 @@ const Menu = () => {
                             />
                           ))}
                         </ul>
-                      </Accordion>
+                      </Accordeon>
                     </li>
-                    <li className='nav-menu__accordion__item'>
-                      <Accordion
+                    <li className='nav-menu__accordeon__item'>
+                      <Accordeon
                         title={translations[lang].main_menu.accessories}
-                        titleClass='btn-reset nav-menu__accordion__item__title'
+                        titleClass='btn-reset nav-menu__accordeon__item__title'
                       >
-                        <ul className='list-reset nav-menu__accordion__item__list'>
+                        <ul className='list-reset nav-menu__accordeon__item__list'>
                           {accessoriesLinks.map((item) => (
                             <MenuLinkItem
                               key={item.id}
@@ -201,14 +201,14 @@ const Menu = () => {
                             />
                           ))}
                         </ul>
-                      </Accordion>
+                      </Accordeon>
                     </li>
-                    <li className='nav-menu__accordion__item'>
-                      <Accordion
+                    <li className='nav-menu__accordeon__item'>
+                      <Accordeon
                         title={translations[lang].main_menu.souvenirs}
-                        titleClass='btn-reset nav-menu__accordion__item__title'
+                        titleClass='btn-reset nav-menu__accordeon__item__title'
                       >
-                        <ul className='list-reset nav-menu__accordion__item__list'>
+                        <ul className='list-reset nav-menu__accordeon__item__list'>
                           {souvenirsLinks.map((item) => (
                             <MenuLinkItem
                               key={item.id}
@@ -217,14 +217,14 @@ const Menu = () => {
                             />
                           ))}
                         </ul>
-                      </Accordion>
+                      </Accordeon>
                     </li>
-                    <li className='nav-menu__accordion__item'>
-                      <Accordion
+                    <li className='nav-menu__accordeon__item'>
+                      <Accordeon
                         title={translations[lang].main_menu.office}
-                        titleClass='btn-reset nav-menu__accordion__item__title'
+                        titleClass='btn-reset nav-menu__accordeon__item__title'
                       >
-                        <ul className='list-reset nav-menu__accordion__item__list'>
+                        <ul className='list-reset nav-menu__accordeon__item__list'>
                           {officeLinks.map((item) => (
                             <MenuLinkItem
                               key={item.id}
@@ -233,7 +233,7 @@ const Menu = () => {
                             />
                           ))}
                         </ul>
-                      </Accordion>
+                      </Accordeon>
                     </li>
                   </motion.ul>
                 )}
@@ -256,7 +256,7 @@ const Menu = () => {
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     exit={{ opacity: 0 }}
-                    className='list-reset nav-menu__accordion'
+                    className='list-reset nav-menu__accordeon'
                   >
                     <BuyersListItems />
                   </motion.ul>
@@ -264,14 +264,14 @@ const Menu = () => {
               </AnimatePresence>
             )}
             {isMedia640 && (
-              <Accordion
+              <Accordeon
                 title={translations[lang].main_menu.buyers}
                 titleClass='btn-reset nav-menu__list__item__btn'
               >
-                <ul className='list-reset nav-menu__accordion__item__list'>
+                <ul className='list-reset nav-menu__accordeon__item__list'>
                   <BuyersListItems />
                 </ul>
-              </Accordion>
+              </Accordeon>
             )}
           </li>
           <li className='nav-menu__list__item'>
@@ -290,7 +290,7 @@ const Menu = () => {
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     exit={{ opacity: 0 }}
-                    className='list-reset nav-menu__accordion'
+                    className='list-reset nav-menu__accordeon'
                   >
                     <ContactsListItems />
                   </motion.ul>
@@ -298,14 +298,14 @@ const Menu = () => {
               </AnimatePresence>
             )}
             {isMedia640 && (
-              <Accordion
+              <Accordeon
                 title={translations[lang].main_menu.contacts}
                 titleClass='btn-reset nav-menu__list__item__btn'
               >
-                <ul className='list-reset nav-menu__accordion__item__list'>
+                <ul className='list-reset nav-menu__accordeon__item__list'>
                   <ContactsListItems />
                 </ul>
-              </Accordion>
+              </Accordeon>
             )}
           </li>
         </ul>

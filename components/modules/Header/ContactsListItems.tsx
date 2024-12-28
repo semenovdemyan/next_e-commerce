@@ -6,32 +6,32 @@ const ContactsListItems = () => {
 
   return (
     <>
-      <li className='nav-menu__accordion__item'>
+      <li className='nav-menu__accordeon__item'>
         <a
-          href='tel:+74995558293'
-          className='nav-menu__accordion__item__link nav-menu__accordion__item__title'
+          href='tel:+79996683935'
+          className='nav-menu__accordeon__item__link nav-menu__accordeon__item__title'
         >
-          +7 (499) 555 82 93
+          +7 (999) 668 39 35
         </a>
       </li>
-      <li className='nav-menu__accordion__item'>
+      <li className='nav-menu__accordeon__item'>
         <a
           href='mailto:test@gmail.com'
-          className='nav-menu__accordion__item__link'
+          className='nav-menu__accordeon__item__link'
         >
           Email
         </a>
       </li>
-      <li className='nav-menu__accordion__item'>
+      <li className='nav-menu__accordeon__item'>
         <Link
-          href='https://t.me/dvejer'
-          className='nav-menu__accordion__item__link'
+          href='https://t.me/demian_semenoff'
+          className='nav-menu__accordeon__item__link'
         >
           {translations[lang].main_menu.tg}
         </Link>
       </li>
-      <li className='nav-menu__accordion__item'>
-        <Link href='https://vk.com' className='nav-menu__accordion__item__link'>
+      <li className='nav-menu__accordeon__item'>
+        <Link href='https://vk.com' className='nav-menu__accordeon__item__link'>
           {translations[lang].main_menu.vk}
         </Link>
       </li>

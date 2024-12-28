@@ -169,7 +169,7 @@ const PrivacyPolicyPage = () => {
                 предложениях и различных событиях. Пользователь всегда может
                 отказаться от получения информационных сообщений, направив
                 Оператору письмо на адрес электронной почты&nbsp;
-                <a href='mailto:rostelecom.merc@rt.ru'>rostelecom.merc@rt.ru</a>
+                <a href='mailto:semenovdemyan@gmail.com'>semenovdemyan@gmail.com</a>
                 &nbsp;с пометкой «Отказ от уведомлений о новых продуктах и
                 услугах и специальных предложениях».
               </li>
@@ -226,7 +226,7 @@ const PrivacyPolicyPage = () => {
                 Пользователь может актуализировать их самостоятельно, путем
                 направления Оператору уведомление на адрес электронной почты
                 Оператора&nbsp;
-                <a href='mailto:rostelecom.merc@rt.ru'>rostelecom.merc@rt.ru</a>
+                <a href='mailto:semenovdemyan@gmail.com'>semenovdemyan@gmail.com</a>
                 &nbsp;с пометкой «Актуализация персональных данных».
               </li>
               <li>
@@ -235,7 +235,7 @@ const PrivacyPolicyPage = () => {
                 обработку персональных данных, направив Оператору уведомление
                 посредством электронной почты на электронный адрес
                 Оператора&nbsp;
-                <a href='mailto:rostelecom.merc@rt.ru'>rostelecom.merc@rt.ru</a>
+                <a href='mailto:semenovdemyan@gmail.com'>semenovdemyan@gmail.com</a>
                 &nbsp;с пометкой «Отзыв согласия на обработку персональных
                 данных».
               </li>
@@ -265,7 +265,7 @@ const PrivacyPolicyPage = () => {
                 интересующим вопросам, касающимся обработки его персональных
                 данных, обратившись к Оператору с помощью электронной
                 почты&nbsp;
-                <a href='mailto:rostelecom.merc@rt.ru'>rostelecom.merc@rt.ru</a>
+                <a href='mailto:semenovdemyan@gmail.com'>semenovdemyan@gmail.com</a>
                 .
               </li>
               <li>
