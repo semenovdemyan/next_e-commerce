@@ -4,12 +4,12 @@ const { faker } = require('@faker-js/faker')
 const getRandomArrayValue = (arr) => arr[Math.floor(Math.random() * arr.length)]
 
 const colors = ['purpure', 'yellow', 'orange', 'black', 'white']
-const officeTypes = ['notebook', 'pen']
+const snacksTypes = ['notebook', 'pen']
 const images = [
-  '/img/office/office-notebook-1.png',
-  '/img/office/office-notebook-2.png',
-  '/img/office/office-pen-1.png',
-  '/img/office/office-pen-2.png',
+  '/img/snacks/snacks-notebook-1.png',
+  '/img/snacks/snacks-notebook-2.png',
+  '/img/snacks/snacks-pen-1.png',
+  '/img/snacks/snacks-pen-2.png',
 ]
 const covers = ['hard', 'soft']
 const ruled = ['cell', 'line']
@@ -27,9 +27,9 @@ const frames = ['round shape', 'metal', 'plastic']
 
 module.exports = {
   async up(db) {
-    return db.collection('office').insertMany(
+    return db.collection('snacks').insertMany(
       [...Array(50)].map(() => {
-        const type = getRandomArrayValue(officeTypes)
+        const type = getRandomArrayValue(snacksTypes)
         const characteristics = [
           {
             type: 'notebook',
@@ -48,7 +48,7 @@ module.exports = {
         ]
 
         return {
-          category: 'office',
+          category: 'snacks',
           type,
           price: +faker.string.numeric(4).replace(/.{0,2}$/, 99),
           name: faker.lorem.sentence(2),
@@ -67,6 +67,6 @@ module.exports = {
   },
 
   async down(db) {
-    return db.collection('office').updateMany([])
+    return db.collection('snacks').updateMany([])
   },
 }

@@ -42,7 +42,7 @@
 }
 
 .breadcrumbs__item__link:hover {
-  color: #9466FF;
+  color: var(--color3);
   transition: color .2s ease-in-out;
 }
 

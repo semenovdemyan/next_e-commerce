@@ -77,7 +77,7 @@ export default function Favorites() {
     <main>
       {pageSpinner ? (
         <span className={styles.payment_success__spinner}>
-          <FontAwesomeIcon icon={faSpinner} spin color='#fff' size='4x' />
+          <FontAwesomeIcon icon={faSpinner} spin color='var(--color8)' size='4x' />
         </span>
       ) : (
         <>

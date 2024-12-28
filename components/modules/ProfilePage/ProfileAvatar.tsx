@@ -34,7 +34,7 @@ const ProfileAvatar = () => {
   return (
     <div className={styles.profile__avatar}>
       {loginCheckSpinner && (
-        <FontAwesomeIcon icon={faSpinner} spin color='#fff' size='3x' />
+        <FontAwesomeIcon icon={faSpinner} spin color='var(--color8)' size='3x' />
       )}
       {src && !loginCheckSpinner && (
         <>
@@ -44,7 +44,7 @@ const ProfileAvatar = () => {
             <input type='file' onChange={handleUploadFile} hidden />
           </label>
           {uploadSpinner ? (
-            <FontAwesomeIcon icon={faSpinner} spin color='#fff' size='3x' />
+            <FontAwesomeIcon icon={faSpinner} spin color='var(--color8)' size='3x' />
           ) : (
             <Image src={src} width={avatarSize} height={avatarSize} alt={alt} />
           )}
@@ -53,7 +53,7 @@ const ProfileAvatar = () => {
       {!src &&
         !loginCheckSpinner &&
         (uploadSpinner ? (
-          <FontAwesomeIcon icon={faSpinner} spin color='#fff' size='3x' />
+          <FontAwesomeIcon icon={faSpinner} spin color='var(--color8)' size='3x' />
         ) : (
           <label className={styles.profile__photo}>
             <input type='file' onChange={handleUploadFile} />

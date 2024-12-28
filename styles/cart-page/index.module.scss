@@ -43,7 +43,7 @@
     &__order {
       padding: 24px;
       height: max-content;
-      background-color: #2A323F;
+      background-color: var(--color9);
       position: sticky;
       top: 20px;
       box-shadow: 0px 12px 20px 0px rgba(0, 0, 0, 0.20), 0px 0px 20px 0px rgba(0, 0, 0, 0.10);
@@ -65,7 +65,7 @@
       display: flex;
       align-items: flex-start;
       padding-bottom: 25px;
-      border-bottom: 1px solid #2A323F;
+      border-bottom: 1px solid var(--color9);
       margin-bottom: 25px;
 
       @media (max-width: 530px) {
@@ -81,7 +81,7 @@
         width: 24px;
 
         & span::before {
-          background-color: #A5A8AD;
+          background-color: var(--color1);
           content: '';
           height: 100%;
           width: 100%;
@@ -114,7 +114,7 @@
       }
 
       &__img {
-        background: radial-gradient(52.53% 52.53% at 50% 47.47%, #4E5D77 0%, rgba(42, 50, 63, 0.00) 100%), #2A323F;
+        background: radial-gradient(52.53% 52.53% at 50% 47.47%, #4E5D77 0%, rgba(42, 50, 63, 0.00) 100%), var(--color9);
 
         @media (max-width: 530px) {
           margin-right: 14px !important;
@@ -176,7 +176,7 @@
         }
 
         &__text {
-          color: #A5A8AD;
+          color: var(--color1);
           font-size: 12px;
           font-weight: 400;
         }
@@ -241,7 +241,7 @@
       }
 
       &__price {
-        color: #E8E9EA;
+        color: var(--color8);
         font-size: 16px;
         font-weight: 500;
 
@@ -294,7 +294,7 @@
       }
 
       &:focus {
-        outline: 1px solid #9466FF;
+        outline: 1px solid var(--color3);
       }
     }
 

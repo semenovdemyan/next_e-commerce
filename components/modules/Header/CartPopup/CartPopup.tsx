@@ -55,7 +55,7 @@ const CartPopup = forwardRef<HTMLDivElement, IWrappedComponentProps>(
                   <FontAwesomeIcon
                     icon={faSpinner}
                     spin
-                    color='#fff'
+                    color='var(--color8)'
                     size='3x'
                   />
                 </div>

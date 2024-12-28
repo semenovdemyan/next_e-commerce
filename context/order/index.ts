@@ -2,7 +2,7 @@
 import toast from 'react-hot-toast'
 import { createDomain } from 'effector'
 import {
-  IGetRostelecomOfficesByCityFx,
+  IGetRostelecomSnackssByCityFx,
   IMakePaymentFx,
   IOrderDetailsValues,
   IPaymentNotifyFx,
@@ -22,16 +22,16 @@ export const setChosenPickupAddressData =
 export const setChosenCourierAddressData =
   order.createEvent<Partial<IRostelecomAddressData>>()
 export const setShouldShowCourierAddressData = order.createEvent<boolean>()
-export const getRostelecomOfficesByCity =
-  order.createEvent<IGetRostelecomOfficesByCityFx>()
+export const getRostelecomSnackssByCity =
+  order.createEvent<IGetRostelecomSnackssByCityFx>()
 export const setCourierAddressData = order.createEvent<IRostelecomAddressData>()
 export const setOnlinePaymentTb = order.createEvent<boolean>()
 export const setCashPaymentTb = order.createEvent<boolean>()
 export const makePayment = order.createEvent<IMakePaymentFx>()
 export const setOrderDetailsValues = order.createEvent<IOrderDetailsValues>()
 
-export const getRostelecomOfficesByCityFx = order.createEffect(
-  async ({ city, lang }: IGetRostelecomOfficesByCityFx) => {
+export const getRostelecomSnackssByCityFx = order.createEffect(
+  async ({ city, lang }: IGetRostelecomSnackssByCityFx) => {
     try {
       const apiKey = process.env.NEXT_PUBLIC_GEOAPIFY_API_KEY
       const baseUrl = `https://api.geoapify.com/v1/geocode/search?format=json&apiKey=${apiKey}`

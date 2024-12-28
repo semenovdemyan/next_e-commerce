@@ -104,7 +104,7 @@ const OrderPayment = () => {
                   htmlFor='payment-1'
                   className={`${styles.order__list__item__payment__content__label} ${styles.no_bg}`}
                 >
-                  {translations[lang].order.cash_office}
+                  {translations[lang].order.cash_snacks}
                 </label>
               </p>
               <p className={styles.order__list__item__payment__content__radio}>
@@ -113,7 +113,7 @@ const OrderPayment = () => {
                   htmlFor='payment-2'
                   className={`${styles.order__list__item__payment__content__label} ${styles.no_bg}`}
                 >
-                  {translations[lang].order.card_office}
+                  {translations[lang].order.card_snacks}
                 </label>
               </p>
             </form>

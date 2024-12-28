@@ -15,7 +15,7 @@ const AddToCartIcon = ({
     ) : (
       <button className={`btn-reset ${className}`} onClick={callback}>
         {addToCartSpinner ? (
-          <FontAwesomeIcon icon={faSpinner} spin color='#fff' />
+          <FontAwesomeIcon icon={faSpinner} spin color='var(--color8)' />
         ) : (
           <span />
         )}

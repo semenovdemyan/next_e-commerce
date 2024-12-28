@@ -14,7 +14,7 @@
     }
 
     &::before {
-      background-color: #E8E9EA;
+      background-color: var(--color8);
       content: '';
       height: 100%;
       width: 100%;
@@ -49,7 +49,7 @@
     }
 
     &_comparison_checked::before {
-      background-color: #26da72;
+      background-color: var(--color6);
       -webkit-mask: url(/img/comparison-checked.svg) no-repeat 50% 50%;
       mask: url(/img/comparison-checked.svg) no-repeat 50% 50%;
     }

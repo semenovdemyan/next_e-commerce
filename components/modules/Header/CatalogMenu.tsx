@@ -83,34 +83,34 @@ const CatalogMenu = () => {
       handler: () => setActiveListId(2),
     },
     {
-      name: translations[lang].main_menu.souvenirs,
+      name: translations[lang].main_menu.souveniers,
       id: 3,
       items: [
         {
-          title: translations[lang].comparison['business-souvenirs'],
-          href: '/catalog/souvenirs?offset=0&type=business-souvenirs',
+          title: translations[lang].comparison['business-souveniers'],
+          href: '/catalog/souveniers?offset=0&type=business-souveniers',
           handleCloseMenu,
         },
         {
-          title: translations[lang].comparison['promotional-souvenirs'],
-          href: '/catalog/souvenirs?offset=0&type=promotional-souvenirs',
+          title: translations[lang].comparison['promotional-souveniers'],
+          href: '/catalog/souveniers?offset=0&type=promotional-souveniers',
           handleCloseMenu,
         },
       ],
       handler: () => setActiveListId(3),
     },
     {
-      name: translations[lang].main_menu.office,
+      name: translations[lang].main_menu.snacks,
       id: 4,
       items: [
         {
           title: translations[lang].comparison.notebook,
-          href: '/catalog/office?offset=0&type=notebook',
+          href: '/catalog/snacks?offset=0&type=notebook',
           handleCloseMenu,
         },
         {
           title: translations[lang].comparison.pen,
-          href: '/catalog/office?offset=0&type=pen',
+          href: '/catalog/snacks?offset=0&type=pen',
           handleCloseMenu,
         },
       ],

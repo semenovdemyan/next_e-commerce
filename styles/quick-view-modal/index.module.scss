@@ -6,7 +6,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 10;
-  background: #2A323F;
+  background: var(--color9);
   box-shadow: 0px 32px 32px 0px rgba(0, 0, 0, 0.20), 0px 0px 32px 0px rgba(0, 0, 0, 0.10);
   display: flex;
 
@@ -27,7 +27,7 @@
     top: 35px;
 
     &::before {
-      background-color: #E8E9EA;
+      background-color: var(--color8);
       content: '';
       height: 100%;
       width: 100%;
@@ -41,7 +41,7 @@
 
     &:hover::before {
       transition: background-color 0.2s ease-in-out;
-      background-color: #9466FF;
+      background-color: var(--color3);
     }
   }
 
@@ -105,7 +105,7 @@
           background-position: center center;
 
           &:hover {
-            background-color: #9466FF !important;
+            background-color: var(--color3) !important;
             transition: background-color .2s ease-in-out;
           }
         }
@@ -136,7 +136,7 @@
           }
 
           & li button:hover svg {
-            fill: #E8E9EA;
+            fill: var(--color8);
             transition: fill .2s ease-in-out;
           }
         }
@@ -195,7 +195,7 @@
           }
 
           &:hover {
-            background-color: #9466FF !important;
+            background-color: var(--color3) !important;
             transition: background-color .2s ease-in-out;
           }
 
@@ -231,7 +231,7 @@
             align-items: center;
             justify-content: center;
             border-radius: 50%;
-            color: #E8E9EA;
+            color: var(--color8);
             font-size: 14px;
           }
         }
@@ -252,7 +252,7 @@
         border: none;
         margin: 0;
         border-radius: 32px;
-        background-color: #9466FF !important;
+        background-color: var(--color3) !important;
         padding: 12px 24px !important;
         width: 164px;
         color: #FFF;
@@ -261,7 +261,7 @@
         transition: background-color .2s ease-in-out;
 
         &:hover {
-          background-color: #70F !important;
+          background-color: var(--color4) !important;
           transition: background-color .2s ease-in-out;
         }
 
@@ -287,14 +287,14 @@
 
       &__link {
         text-decoration: none;
-        color: #9466FF;
+        color: var(--color3);
         text-align: center;
         font-size: 16px;
         font-weight: 500;
         transition: color .2s ease-in-out;
 
         &:hover {
-          color: #70F;
+          color: var(--color4);
           transition: color .2s ease-in-out;
         }
       }

@@ -66,7 +66,7 @@ const ProfileEmail = () => {
   return (
     <div className={styles.profile__info}>
       {loginCheckSpinner && (
-        <FontAwesomeIcon icon={faSpinner} spin color='#fff' />
+        <FontAwesomeIcon icon={faSpinner} spin color='var(--color8)' />
       )}
       {edit && !loginCheckSpinner && !showCodeInput && !verifyEmailSpinner && (
         <motion.div
@@ -106,7 +106,7 @@ const ProfileEmail = () => {
         </motion.div>
       )}
       {verifyEmailSpinner && (
-        <FontAwesomeIcon icon={faSpinner} spin color='#fff' />
+        <FontAwesomeIcon icon={faSpinner} spin color='var(--color8)' />
       )}
       {editEmailSpinner && (
         <motion.div

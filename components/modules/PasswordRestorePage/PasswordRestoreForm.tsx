@@ -73,7 +73,7 @@ const PasswordRestoreForm = ({ userEmail }: { userEmail: string }) => {
       </label>
       <button className={`btn-reset ${styles.password_restore_form__btn}`}>
         {updatePasswordSpinner ? (
-          <FontAwesomeIcon icon={faSpinner} spin color='#fff' />
+          <FontAwesomeIcon icon={faSpinner} spin color='var(--color8)' />
         ) : (
           translations[lang].common.save
         )}

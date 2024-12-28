@@ -54,7 +54,7 @@ const PasswordRestorePage = () => {
           </h1>
           {(verifyEmailSpinner || verifyCodeSpinner) && (
             <div className={styles.password_restore__spinner}>
-              <FontAwesomeIcon icon={faSpinner} spin color='#fff' size='3x' />
+              <FontAwesomeIcon icon={faSpinner} spin color='var(--color8)' size='3x' />
             </div>
           )}
           {viewId === 1 && !verifyEmailSpinner && (

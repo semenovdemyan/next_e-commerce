@@ -28,9 +28,9 @@ const Categories = () => {
     {
       src: img3,
       id: 3,
-      title: translations[lang].main_page.category_souvenirs,
+      title: translations[lang].main_page.category_souveniers,
     },
-    { src: img4, id: 4, title: translations[lang].main_page.category_office },
+    { src: img4, id: 4, title: translations[lang].main_page.category_snacks },
   ]
 
   return (
@@ -43,18 +43,6 @@ const Categories = () => {
           <AllLink />
           {!isMedia490 && (
             <>
-              <Link
-                href='/catalog/cloth'
-                className={`${styles.categories__right} ${styles.categories__img} ${imgSpinnerClass}`}
-              >
-                <Image
-                  src={img1}
-                  alt='Cloth'
-                  className='transition-opacity opacity-0 duration'
-                  onLoad={handleLoadingImageComplete}
-                />
-                <span>{translations[lang].main_page.category_cloth}</span>
-              </Link>
               <div className={styles.categories__left}>
                 <div className={styles.categories__left__top}>
                   <Link
@@ -72,33 +60,45 @@ const Categories = () => {
                     </span>
                   </Link>
                   <Link
-                    href='/catalog/souvenirs'
+                    href='/catalog/souveniers'
                     className={`${styles.categories__left__top__left} ${styles.categories__img} ${imgSpinnerClass}`}
                   >
                     <Image
                       src={img3}
-                      alt='Souvenirs'
+                      alt='Souveniers'
                       className='transition-opacity opacity-0 duration'
                       onLoad={handleLoadingImageComplete}
                     />
                     <span>
-                      {translations[lang].main_page.category_souvenirs}
+                      {translations[lang].main_page.category_souveniers}
                     </span>
                   </Link>
                 </div>
                 <Link
-                  href='/catalog/office'
+                  href='/catalog/snacks'
                   className={`${styles.categories__left__bottom} ${styles.categories__img} ${imgSpinnerClass}`}
                 >
                   <Image
                     src={img4}
-                    alt='Office'
+                    alt='snacks'
                     className='transition-opacity opacity-0 duration'
                     onLoad={handleLoadingImageComplete}
                   />
-                  <span>{translations[lang].main_page.category_office}</span>
+                  <span>{translations[lang].main_page.category_snacks}</span>
                 </Link>
               </div>
+              <Link
+                href='/catalog/cloth'
+                className={`${styles.categories__right} ${styles.categories__img} ${imgSpinnerClass}`}
+              >
+                <Image
+                  src={img1}
+                  alt='Cloth'
+                  className='transition-opacity opacity-0 duration'
+                  onLoad={handleLoadingImageComplete}
+                />
+                <span>{translations[lang].main_page.category_cloth}</span>
+              </Link>
             </>
           )}
           {isMedia490 && <MainSlider images={images} />}

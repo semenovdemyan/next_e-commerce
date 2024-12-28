@@ -1,7 +1,7 @@
 'use client'
 import { IOrderDetailsValues, IRostelecomAddressData } from '@/types/order'
 import {
-  getRostelecomOfficesByCityFx,
+  getRostelecomSnackssByCityFx,
   order,
   setCashPaymentTb,
   setChosenCourierAddressData,
@@ -18,7 +18,7 @@ import {
 
 export const $rostelecomDataByCity = order
   .createStore<IRostelecomAddressData[]>([])
-  .on(getRostelecomOfficesByCityFx.done, (_, { result }) => result)
+  .on(getRostelecomSnackssByCityFx.done, (_, { result }) => result)
 
 export const $pickupTab = order
   .createStore<boolean>(true)

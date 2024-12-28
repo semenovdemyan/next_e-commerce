@@ -57,14 +57,14 @@
       &__item {
         list-style: none;
         text-align: center;
-        background: radial-gradient(52.53% 52.53% at 50% 47.47%, #4E5D77 0%, rgba(42, 50, 63, 0.00) 100%), #2A323F;
+        background: radial-gradient(52.53% 52.53% at 50% 47.47%, #4E5D77 0%, rgba(42, 50, 63, 0.00) 100%), var(--color9);
 
         @media (max-width: 520px) {
           margin: 0 -6px;
         }
 
         &.img_loading {
-          background: #2a323f;
+          background: var(--color9);
           pointer-events: none;
         }
 
@@ -153,7 +153,7 @@
       &__favorite, &__share  {
         width: 48px;
         height: 48px;
-        background-color: #2A323F;
+        background-color: var(--color9);
         border-radius: 50%;
       }
 
@@ -176,7 +176,7 @@
         position: relative;
 
         &::before {
-          background-color: #E8E9EA;
+          background-color: var(--color8);
           content: '';
           right: 2px;
           left: 0;
@@ -211,12 +211,12 @@
     &__color, &__size, &__collection {
       display: block;
       margin-bottom: 24px;
-      color: #E8E9EA;
+      color: var(--color8);
       font-size: 14px;
       font-weight: 500;
 
       span {
-        color: #A5A8AD;
+        color: var(--color1);
         font-weight: 400;
       }
 
@@ -251,7 +251,7 @@
     &__count {
       display: block;
       margin-bottom: 12px;
-      color: #A5A8AD;
+      color: var(--color1);
       font-size: 14px;
     }
 
@@ -260,13 +260,13 @@
       font-size: 16px;
       font-weight: 500;
       border-radius: 50px;
-      background-color: #9466FF;
+      background-color: var(--color3);
       padding: 12px 35px;
       transition: background-color .2s ease-in-out;
 
       &:hover {
         transition: background-color .2s ease-in-out;
-        background-color: #70F;
+        background-color: var(--color4);
       }
     }
 
@@ -302,26 +302,26 @@
     }
 
     &__description {
-      border-bottom: 1px solid #2A323F;
+      border-bottom: 1px solid var(--color9);
       display: block;
 
       &__btn {
-        border-top: 1px solid #2A323F;
+        border-top: 1px solid var(--color9);
         position: relative;
         padding: 12px 0;
         width: 100%;
         text-align: left;
-        color: #e8e9ea;
+        color: var(--color2);
 
         @media (max-width: 520px) {
           padding: 10px 0;
           font-size: 14px;
-          color: #A5A8AD;
+          color: var(--color1);
         }
 
         &::before {
           content: '';
-          background-color: #E8E9EA;
+          background-color: var(--color8);
           display: block;
           width: 24px;
           height: 24px;
@@ -341,25 +341,25 @@
         }
 
         &:hover &__text {
-          color: #9466FF;
+          color: var(--color3);
           transition: color .2s ease-in-out;
         }
 
         &:hover &__icon {
-          background-color: #9466FF;
+          background-color: var(--color3);
           transition: background-color .2s ease-in-out, transform .2s ease-in-out;
         }
       }
 
       &__text {
         margin: 0;
-        color: #A5A8AD;
+        color: var(--color1);
         line-height: 24px;
         padding-bottom: 12px;
 
         @media (max-width: 520px) {
           font-size: 14px;
-          color: #E8E9EA;
+          color: var(--color8);
         }
       }
     }

@@ -2,7 +2,7 @@
 /* eslint-disable @typescript-eslint/ban-ts-comment */
 
 import {
-  getRostelecomOfficesByCityFx,
+  getRostelecomSnackssByCityFx,
   setChosenPickupAddressData,
   setShouldLoadRostelecomData,
 } from '@/context/order'
@@ -16,7 +16,7 @@ export const handleSelectPickupAddress = async (text: string) => {
 
   setShouldLoadRostelecomData(true)
 
-  const rostelecomData = await getRostelecomOfficesByCityFx({
+  const rostelecomData = await getRostelecomSnackssByCityFx({
     city: text.split(' ')[0].replace(',', ''),
     lang: langFromLS,
   })

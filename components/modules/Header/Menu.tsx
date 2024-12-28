@@ -92,29 +92,29 @@ const Menu = () => {
     },
   ]
 
-  const souvenirsLinks = [
+  const souveniersLinks = [
     {
       id: 1,
-      text: translations[lang].comparison['business-souvenirs'],
-      href: '/catalog/souvenirs?offset=0&type=business-souvenirs',
+      text: translations[lang].comparison['business-souveniers'],
+      href: '/catalog/souveniers?offset=0&type=business-souveniers',
     },
     {
       id: 2,
-      text: translations[lang].comparison['promotional-souvenirs'],
-      href: '/catalog/souvenirs?offset=0&type=promotional-souvenirs',
+      text: translations[lang].comparison['promotional-souveniers'],
+      href: '/catalog/souveniers?offset=0&type=promotional-souveniers',
     },
   ]
 
-  const officeLinks = [
+  const snacksLinks = [
     {
       id: 1,
       text: translations[lang].comparison.notebook,
-      href: '/catalog/office?offset=0&type=notebook',
+      href: '/catalog/snacks?offset=0&type=notebook',
     },
     {
       id: 2,
       text: translations[lang].comparison.pen,
-      href: '/catalog/office?offset=0&type=pen',
+      href: '/catalog/snacks?offset=0&type=pen',
     },
   ]
 
@@ -205,11 +205,11 @@ const Menu = () => {
                     </li>
                     <li className='nav-menu__accordeon__item'>
                       <Accordeon
-                        title={translations[lang].main_menu.souvenirs}
+                        title={translations[lang].main_menu.souveniers}
                         titleClass='btn-reset nav-menu__accordeon__item__title'
                       >
                         <ul className='list-reset nav-menu__accordeon__item__list'>
-                          {souvenirsLinks.map((item) => (
+                          {souveniersLinks.map((item) => (
                             <MenuLinkItem
                               key={item.id}
                               item={item}
@@ -221,11 +221,11 @@ const Menu = () => {
                     </li>
                     <li className='nav-menu__accordeon__item'>
                       <Accordeon
-                        title={translations[lang].main_menu.office}
+                        title={translations[lang].main_menu.snacks}
                         titleClass='btn-reset nav-menu__accordeon__item__title'
                       >
                         <ul className='list-reset nav-menu__accordeon__item__list'>
-                          {officeLinks.map((item) => (
+                          {snacksLinks.map((item) => (
                             <MenuLinkItem
                               key={item.id}
                               item={item}

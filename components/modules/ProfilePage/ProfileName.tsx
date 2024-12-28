@@ -58,7 +58,7 @@ const ProfileName = () => {
   return (
     <div className={styles.profile__info}>
       {loginCheckSpinner && (
-        <FontAwesomeIcon icon={faSpinner} spin color='#fff' />
+        <FontAwesomeIcon icon={faSpinner} spin color='var(--color8)' />
       )}
       {edit && !loginCheckSpinner && (
         <motion.div

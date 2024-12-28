@@ -10,7 +10,7 @@ export interface IOrderCartItemProps {
   position: number
 }
 
-export interface IGetRostelecomOfficesByCityFx {
+export interface IGetRostelecomSnackssByCityFx {
   city: string
   lang: string
 }

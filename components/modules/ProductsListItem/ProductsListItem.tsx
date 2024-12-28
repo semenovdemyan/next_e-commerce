@@ -176,7 +176,7 @@ const ProductsListItem = ({ item, title }: IProductsListItemProps) => {
               style={addToCartSpinner ? { minWidth: 125, height: 48 } : {}}
             >
               {addToCartSpinner ? (
-                <FontAwesomeIcon icon={faSpinner} spin color='#fff' />
+                <FontAwesomeIcon icon={faSpinner} spin color='var(--color8)' />
               ) : isProductInCart ? (
                 translations[lang].product.in_cart
               ) : (

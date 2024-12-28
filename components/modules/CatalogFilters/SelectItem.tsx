@@ -32,7 +32,7 @@ const SelectItem = ({
         <span
           className={`${styles.catalog__filters__list__item__spinner} ${mobileClassName}`}
         >
-          <FontAwesomeIcon icon={faSpinner} spin color='#fff' />
+          <FontAwesomeIcon icon={faSpinner} spin color='var(--color8)' />
         </span>
       )}
       <button

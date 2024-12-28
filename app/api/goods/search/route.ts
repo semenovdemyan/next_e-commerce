@@ -45,18 +45,18 @@ export async function POST(req: Request) {
       ]
     }
 
-    const [cloth, accessories, souvenirs, office] = await Promise.allSettled([
+    const [cloth, accessories, souveniers, snacks] = await Promise.allSettled([
       getGoodsByCollection('cloth'),
       getGoodsByCollection('accessories'),
-      getGoodsByCollection('souvenirs'),
-      getGoodsByCollection('office'),
+      getGoodsByCollection('souveniers'),
+      getGoodsByCollection('snacks'),
     ])
 
     if (
       cloth.status !== 'fulfilled' ||
       accessories.status !== 'fulfilled' ||
-      office.status !== 'fulfilled' ||
-      souvenirs.status !== 'fulfilled'
+      snacks.status !== 'fulfilled' ||
+      souveniers.status !== 'fulfilled'
     ) {
       return NextResponse.json({
         count: 0,
@@ -67,8 +67,8 @@ export async function POST(req: Request) {
     const allGoods = [
       ...cloth.value,
       ...accessories.value,
-      ...office.value,
-      ...souvenirs.value,
+      ...snacks.value,
+      ...souveniers.value,
     ]
 
     return NextResponse.json({

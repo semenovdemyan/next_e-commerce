@@ -2,25 +2,25 @@ export const productsWithoutSizes = [
   'umbrella',
   'pen',
   'notebook',
-  'promotional-souvenirs',
-  'business-souvenirs',
+  'promotional-souveniers',
+  'business-souveniers',
 ]
 
 export const productTypes = [
   'long-sleeves',
   'bags',
-  'business-souvenirs',
+  'business-souveniers',
   'headdress',
   'hoodie',
   'notebook',
   'pen',
   'outerwear',
-  'promotional-souvenirs',
+  'promotional-souveniers',
   't-shirts',
   'umbrella',
 ]
 
-export const productCategories = ['cloth', 'accessories', 'office', 'souvenirs']
+export const productCategories = ['cloth', 'accessories', 'snacks', 'souveniers']
 export const allowedColors = ['purpure', 'yellow', 'orange', 'black', 'white']
 export const allowedSizes = ['s', 'l', 'm', 'xl', 'xxl']
 export const allowedCollectionsCategories = ['cloth', 'accessories']

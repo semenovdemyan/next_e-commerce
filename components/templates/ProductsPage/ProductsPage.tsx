@@ -48,13 +48,13 @@ const ProductsPage = ({ searchParams, pageName }: IProductsPage) => {
             },
             {
               id: 4,
-              title: translations[lang].main_menu.souvenirs,
-              href: '/catalog/souvenirs',
+              title: translations[lang].main_menu.souveniers,
+              href: '/catalog/souveniers',
             },
             {
               id: 5,
-              title: translations[lang].main_menu.office,
-              href: '/catalog/office',
+              title: translations[lang].main_menu.snacks,
+              href: '/catalog/snacks',
             },
           ],
         })
@@ -107,9 +107,9 @@ const ProductsPage = ({ searchParams, pageName }: IProductsPage) => {
           ],
         })
         break
-      case 'office':
+      case 'snacks':
         setCatalogCategoryOptions({
-          officeCategoryOptions: [
+          snacksCategoryOptions: [
             {
               id: 1,
               title: translations[lang].comparison.pen,
@@ -123,20 +123,20 @@ const ProductsPage = ({ searchParams, pageName }: IProductsPage) => {
           ],
         })
         break
-      case 'souvenirs':
+      case 'souveniers':
         setCatalogCategoryOptions({
-          souvenirsCategoryOptions: [
+          souveniersCategoryOptions: [
             {
               id: 1,
-              title: translations[lang].comparison['business-souvenirs'],
+              title: translations[lang].comparison['business-souveniers'],
               filterHandler: () =>
-                handleApplyFiltersWithCategory('business-souvenirs'),
+                handleApplyFiltersWithCategory('business-souveniers'),
             },
             {
               id: 2,
-              title: translations[lang].comparison['promotional-souvenirs'],
+              title: translations[lang].comparison['promotional-souveniers'],
               filterHandler: () =>
-                handleApplyFiltersWithCategory('promotional-souvenirs'),
+                handleApplyFiltersWithCategory('promotional-souveniers'),
             },
           ],
         })

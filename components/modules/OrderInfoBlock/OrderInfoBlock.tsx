@@ -163,7 +163,7 @@ const OrderInfoBlock = ({
             onClick={handleMakePayment}
           >
             {paymentSpinner ? (
-              <FontAwesomeIcon icon={faSpinner} spin color='#fff' />
+              <FontAwesomeIcon icon={faSpinner} spin color='var(--color8)' />
             ) : (
               translations[lang].order.make_order
             )}

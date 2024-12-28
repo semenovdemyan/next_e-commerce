@@ -29,7 +29,7 @@ const CartListItem = ({ item }: { item: ICartItem }) => {
         onClick={handleDeleteCartItem}
       >
         {deleteSpinner ? (
-          <FontAwesomeIcon icon={faSpinner} spin color='#fff' />
+          <FontAwesomeIcon icon={faSpinner} spin color='var(--color8)' />
         ) : (
           <span />
         )}

@@ -4,12 +4,12 @@ const { faker } = require('@faker-js/faker')
 const getRandomArrayValue = (arr) => arr[Math.floor(Math.random() * arr.length)]
 
 const colors = ['purpure', 'yellow', 'orange', 'black', 'white']
-const souvenirTypes = ['promotional-souvenirs', 'business-souvenirs']
+const souvenirTypes = ['promotional-souveniers', 'business-souveniers']
 const images = [
-  '/img/souvenirs/promotional-souvenirs-1.png',
-  '/img/souvenirs/promotional-souvenirs-2.png',
-  '/img/souvenirs/business-souvenirs-1.png',
-  '/img/souvenirs/business-souvenirs-2.png',
+  '/img/souveniers/promotional-souveniers-1.png',
+  '/img/souveniers/promotional-souveniers-2.png',
+  '/img/souveniers/business-souveniers-1.png',
+  '/img/souveniers/business-souveniers-2.png',
 ]
 const materials = ['flour salt', 'metal', 'plastic']
 const heights = [5, 10, 15, 20]
@@ -17,20 +17,20 @@ const weights = [80, 100, 150, 250]
 
 module.exports = {
   async up(db) {
-    return db.collection('souvenirs').insertMany(
+    return db.collection('souveniers').insertMany(
       [...Array(50)].map(() => {
         const type = getRandomArrayValue(souvenirTypes)
 
         const characteristics = [
           {
-            type: 'promotional-souvenirs',
+            type: 'promotional-souveniers',
             color: getRandomArrayValue(colors),
             material: getRandomArrayValue(materials),
             height: getRandomArrayValue(heights),
             weight: getRandomArrayValue(weights),
           },
           {
-            type: 'business-souvenirs',
+            type: 'business-souveniers',
             color: getRandomArrayValue(colors),
             material: getRandomArrayValue(materials),
             height: getRandomArrayValue(heights),
@@ -39,7 +39,7 @@ module.exports = {
         ]
 
         return {
-          category: 'souvenirs',
+          category: 'souveniers',
           type,
           price: +faker.string.numeric(4).replace(/.{0,2}$/, 99),
           name: faker.lorem.sentence(2),
@@ -58,6 +58,6 @@ module.exports = {
   },
 
   async down(db) {
-    return db.collection('souvenirs').updateMany([])
+    return db.collection('souveniers').updateMany([])
   },
 }

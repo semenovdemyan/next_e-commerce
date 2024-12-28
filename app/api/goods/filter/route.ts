@@ -73,18 +73,20 @@ export async function GET(req: Request) {
         return goods
       }
 
-      const [cloth, accessories, office, souvenirs] = await Promise.allSettled([
-        getFilteredCollection('cloth'),
-        getFilteredCollection('accessories'),
-        getFilteredCollection('office'),
-        getFilteredCollection('souvenirs'),
-      ])
+      const [cloth, accessories, snacks, souveniers] = await Promise.allSettled(
+        [
+          getFilteredCollection('cloth'),
+          getFilteredCollection('accessories'),
+          getFilteredCollection('snacks'),
+          getFilteredCollection('souveniers'),
+        ]
+      )
 
       if (
         cloth.status !== 'fulfilled' ||
         accessories.status !== 'fulfilled' ||
-        office.status !== 'fulfilled' ||
-        souvenirs.status !== 'fulfilled'
+        snacks.status !== 'fulfilled' ||
+        souveniers.status !== 'fulfilled'
       ) {
         return NextResponse.json({
           count: 0,
@@ -95,8 +97,8 @@ export async function GET(req: Request) {
       const allGoods = [
         ...cloth.value,
         ...accessories.value,
-        ...office.value,
-        ...souvenirs.value,
+        ...snacks.value,
+        ...souveniers.value,
       ].sort((a, b) => {
         if (sortParam.includes('cheap_first')) {
           return +a.price - +b.price

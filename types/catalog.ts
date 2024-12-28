@@ -13,8 +13,8 @@ export interface ICatalogCategoryOptions {
   }[]
   clothCategoryOptions?: ICategoryOption[]
   accessoryCategoryOptions?: ICategoryOption[]
-  officeCategoryOptions?: ICategoryOption[]
-  souvenirsCategoryOptions?: ICategoryOption[]
+  snacksCategoryOptions?: ICategoryOption[]
+  souveniersCategoryOptions?: ICategoryOption[]
 }
 
 export interface ICategoryOption {

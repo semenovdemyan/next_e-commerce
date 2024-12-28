@@ -36,7 +36,7 @@ const CourierAddressesItem = () => {
     <>
       {spinner && (
         <span className={styles.order__list__item__delivery__inner__spinner}>
-          <FontAwesomeIcon icon={faSpinner} spin color='#fff' size='2x' />
+          <FontAwesomeIcon icon={faSpinner} spin color='var(--color8)' size='2x' />
         </span>
       )}
       {!spinner && (

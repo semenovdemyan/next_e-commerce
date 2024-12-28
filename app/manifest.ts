@@ -7,8 +7,8 @@ export default function manifest(): MetadataRoute.Manifest {
     description:
       'Сытый\u00A0моряк магазин одежды, аксесуаров, концелярии и сувениров',
     start_url: '/',
-    background_color: '#fff',
-    theme_color: '#fff',
+    background_color: 'var(--color8)',
+    theme_color: 'var(--color8)',
     display: 'standalone',
     icons: [
       {

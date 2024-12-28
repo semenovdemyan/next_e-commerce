@@ -2,7 +2,7 @@ import { faSpinner } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { useUnit } from 'effector-react'
 import {
-  getRostelecomOfficesByCityFx,
+  getRostelecomSnackssByCityFx,
   setChosenPickupAddressData,
   setShouldLoadRostelecomData,
   setShouldShowCourierAddressData,
@@ -28,7 +28,7 @@ const AddressesList = ({
   const shouldLoadRostelecomData = useUnit($shouldLoadRostelecomData)
   const { handleSelectAddress } = useTTMap()
   const loadRostelecomDataSpinner = useUnit(
-    getRostelecomOfficesByCityFx.pending
+    getRostelecomSnackssByCityFx.pending
   )
 
   const handleChosenAddressData = (data: Partial<IRostelecomAddressData>) => {
@@ -45,7 +45,7 @@ const AddressesList = ({
             <span
               className={styles.order__list__item__delivery__inner__spinner}
             >
-              <FontAwesomeIcon icon={faSpinner} spin color='#fff' size='2x' />
+              <FontAwesomeIcon icon={faSpinner} spin color='var(--color8)' size='2x' />
             </span>
           )}
           {!loadRostelecomDataSpinner && (

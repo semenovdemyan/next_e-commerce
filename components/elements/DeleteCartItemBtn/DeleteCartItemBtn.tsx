@@ -13,7 +13,7 @@ const DeleteItemBtn = ({
     disabled={btnDisabled}
   >
     {btnDisabled ? (
-      <FontAwesomeIcon icon={faSpinner} spin color='#fff' />
+      <FontAwesomeIcon icon={faSpinner} spin color='var(--color8)' />
     ) : (
       <span />
     )}

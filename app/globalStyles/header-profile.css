@@ -60,11 +60,11 @@
 }
 
 .header-profile__item__btn{
-  color: #E8E9EA;
+  color: var(--color8);
   transition: color .2s ease-in-out;
 }
 
 .header-profile__item__btn:hover {
-  color: #9466FF;
+  color: var(--color3);
   transition: color .2s ease-in-out;
 }
